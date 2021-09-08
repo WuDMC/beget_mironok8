@@ -6,10 +6,10 @@ from django.http import HttpResponse
 def index(request):
     context = {
         'text' : {
-            'buttonRu': 'Как это работает?',
-            'buttonEn': 'How it works?',
-            'underButtonTextRu' : 'Cервис работает на базе telegram.',
-            'underButtonTextEn' : 'Service works on telegram base.'
+            'buttonRu': 'Заказать',
+            'buttonEn': 'Order now',
+            'underButtonTextRu' : 'Метро Гражданский проспект',
+            'underButtonTextEn' : 'Metro Grazhdanka'
         }
     }
     return render(request, 'main/index.html', context)
